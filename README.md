@@ -27,5 +27,5 @@
 ## Day11
 
 ## Day12
-[sorting colors](https://github.com/rudy8399/TeachMaestro_75_Days_Coding_Challange/tree/main/75-sort-colors)
-[partition Labels](https://github.com/rudy8399/TeachMaestro_75_Days_Coding_Challange/tree/main/763-partition-labels)
+###### [sorting colors](https://github.com/rudy8399/TeachMaestro_75_Days_Coding_Challange/tree/main/75-sort-colors)
+###### [partition Labels](https://github.com/rudy8399/TeachMaestro_75_Days_Coding_Challange/tree/main/763-partition-labels)
