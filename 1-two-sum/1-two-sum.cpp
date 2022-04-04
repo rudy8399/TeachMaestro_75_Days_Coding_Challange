@@ -1,0 +1,79 @@
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+    //     int n=nums.size();
+    //     vector<int>v;
+    //     for(int i=0;i<n;i++){
+    //         for(int j=i+1;j<n;j++){
+    //             if(nums[i]+nums[j]==target){
+    //                 v.push_back(i);
+    //                 v.push_back(j);
+    //                 return v;
+    //             }
+    //         }
+    //     }
+    //     return v;
+    // }
+        
+        //wont work because sorting array will hamper the index
+//         sort(nums.begin(),nums.end());
+//         vector<int>ans;
+//         int n=nums.size();
+//         int i=0;
+//         int j=n-1;
+//         while(i<j){
+//             if(nums[i]+nums[j]>target){
+//                 j--;
+//             }
+//             else if(nums[i]+nums[j]<target){
+//                 i++;
+//             }
+//             else{
+//                 ans={i,j};
+//                 return ans;
+//             }
+//         }
+//         return ans;
+        
+    //}
+//         vector<int>ans;
+//          int n=nums.size();
+//         unordered_map<int,int>mp;
+//         for(int i=0;i<n;i++){
+//             auto it =mp.find(target-nums[i]);
+//             if(it==mp.end()){
+//                 mp.insert({nums[i],i});
+//             }
+//             else{
+//                 ans={i,it->second};
+//                 return ans;
+                
+//             }
+//         }
+//         return ans;
+//     }
+        vector<pair<int,int>>arr;
+        for(int i=0;i<nums.size();i++){
+            arr.push_back({nums[i],i});
+        }
+        sort(arr.begin(),arr.end());
+        
+        vector<int>ans;
+        int i=0; int j=nums.size()-1;
+        
+        while(i<j){
+            if(arr[i].first+arr[j].first==target){
+                ans={arr[i].second,arr[j].second};
+                return ans;
+            }
+            else if(arr[i].first+arr[j].first>target){
+                j--;
+            }
+            else
+                i++;
+        }
+        return ans;
+    }
+        
+        
+};
