@@ -1,0 +1,27 @@
+class Solution {
+public:
+    vector<int> plusOne(vector<int>& digits) {
+        int n=digits.size();
+        int add_on=1;
+        for(int i=n-1;i>=0;i--){
+            digits[i]+=add_on;
+            if(digits[i]==10){
+                digits[i]=0;
+                add_on=1;
+            }
+            else{
+                add_on=0;
+                break;
+            }
+        }
+        if(add_on==1){
+            digits.push_back(0);
+            for(int i=n;i>0;i--){
+                digits[i]=digits[i-1];
+            }
+            digits[0]=1;
+        }
+        return digits;
+        
+    }
+};
