@@ -6,9 +6,9 @@
 ###### [move zeros](https://github.com/rudy8399/TeachMaestro_75_Days_Coding_Challange/tree/main/283-move-zeroes)
 ## Day2
 ###### [977. Squares of a Sorted Array]()
-###### 122. Best Time to Buy and Sell Stock II
-###### [724. Find Pivot Index]
-###### [169. Majority Element]
+###### 122. Best Time to Buy and Sell Stock II]()
+###### [724. Find Pivot Index]()
+###### [169. Majority Element]()
 
 ## Day3
 ###### [118. Pascal's Triangle]()
