@@ -56,4 +56,9 @@
 ## Day13
 ###### [424. Longest Repeating Character Replacement]()
 ###### [992. Subarrays with K Different Integers]()
+## Day13
+###### [852-peak-index-in-a-mountain-array](https://github.com/rudy8399/TeachMaestro_75_Days_Coding_Challange/tree/main/852-peak-index-in-a-mountain-array)
+###### [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/rudy8399/TeachMaestro_75_Days_Coding_Challange/tree/main/1351-count-negative-numbers-in-a-sorted-matrix)
+###### [search-in-rotated-sorted-array]()
+###### [time-based-key-value-store/]()
 
