@@ -39,7 +39,7 @@ public:
         }
         int delta=(asum-bsum)/2;
         
-        set<int>searchA;
+        unordered_set<int>searchA;
         for(auto &x:A){
             searchA.insert(x);
         }
