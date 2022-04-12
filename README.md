@@ -72,8 +72,19 @@
 ## Day17
 
 ## Day 18
+###### [hashing set-1 intro](https://www.geeksforgeeks.org/hashing-set-1-introduction/)
+###### [hashing set-2 seperate chaining ](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)
+###### [hashing set-3 open addressing ](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/)
 
 ## Day 19
+###### [design hashMap]()
+###### [design twitter]()
+###### [top-k frequent elements]()
+###### [verifying an alien dictionary]()
 
 # Day 20
+###### [reverese linked list](https://github.com/rudy8399/TeachMaestro_75_Days_Coding_Challange/tree/main/206-reverse-linked-list)
+###### [find middle node of linked list]()
+###### [merge two sorted list]()
+###### [remove nth node from back of linked list]()
 
