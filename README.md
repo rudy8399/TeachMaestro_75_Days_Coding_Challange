@@ -88,3 +88,11 @@
 ###### [21-merge two sorted list](https://github.com/rudy8399/TeachMaestro_75_Days_Coding_Challange/tree/main/21-merge-two-sorted-lists)
 ###### [19-remove nth node from back of linked list](https://github.com/rudy8399/TeachMaestro_75_Days_Coding_Challange/tree/main/19-remove-nth-node-from-end-of-list)
 
+## Day 21
+###### [237-delete-node-in-a-linked-list](https://github.com/rudy8399/TeachMaestro_75_Days_Coding_Challange/tree/main/237-delete-node-in-a-linked-list)
+
+###### []()
+
+###### []()
+
+###### []()
