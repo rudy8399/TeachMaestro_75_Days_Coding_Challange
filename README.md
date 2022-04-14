@@ -91,7 +91,7 @@
 ## Day 21
 ###### [237-delete-node-in-a-linked-list](https://github.com/rudy8399/TeachMaestro_75_Days_Coding_Challange/tree/main/237-delete-node-in-a-linked-list)
 
-###### []()
+###### [160-intersection-of-two-linked-lists](https://github.com/rudy8399/TeachMaestro_75_Days_Coding_Challange/tree/main/160-intersection-of-two-linked-lists)
 
 ###### []()
 
