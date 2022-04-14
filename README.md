@@ -93,9 +93,9 @@
 
 ###### [160-intersection-of-two-linked-lists](https://github.com/rudy8399/TeachMaestro_75_Days_Coding_Challange/tree/main/160-intersection-of-two-linked-lists)
 
-###### []()
+###### [445. Add Two Numbers II]()
 
-###### []()
+###### [234. Palindrome Linked List]()
 ## Day 22
 
 ###### []()
