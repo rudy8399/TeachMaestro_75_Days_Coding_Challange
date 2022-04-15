@@ -93,17 +93,17 @@
 
 ###### [160-intersection-of-two-linked-lists](https://github.com/rudy8399/TeachMaestro_75_Days_Coding_Challange/tree/main/160-intersection-of-two-linked-lists)
 
-###### [445. Add Two Numbers II]()
+###### [445. Add Two Numbers II](https://github.com/rudy8399/TeachMaestro_75_Days_Coding_Challange/tree/main/445-add-two-numbers-ii)
 
 ###### [234. Palindrome Linked List]()
 ## Day 22
 
-###### []()
+###### [61-rotate-list](https://github.com/rudy8399/TeachMaestro_75_Days_Coding_Challange/tree/main/61-rotate-list)
 
 ###### []()
 
 ###### []()
-## Day 22
+## Day 23
 ###### []()
 
 ###### []()
