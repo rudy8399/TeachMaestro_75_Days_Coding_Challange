@@ -20,13 +20,7 @@ public:
         inorder(root->right,lst);
     }
     void solver(TreeNode* root,vector<TreeNode*>&lst){
-        for(int i=0;i<lst.size()-1;i++){
-            lst[i]->right=lst[i+1];
-            lst[i]->left=NULL;
-        }
-        lst[lst.size()-1]->right=NULL;
-        lst[lst.size()-1]->left=NULL;
-        root=lst[0];
+       
         
         
     }
@@ -36,7 +30,15 @@ public:
         }
         vector<TreeNode*>lst;
         inorder(root,lst);
-        solver(root,lst);
-        return lst[0];
+        
+         for(int i=0;i<lst.size()-1;i++){
+            lst[i]->right=lst[i+1];
+            lst[i]->left=NULL;
+        }
+        lst[lst.size()-1]->right=NULL;
+        lst[lst.size()-1]->left=NULL;
+        root=lst[0];
+        
+        return root;
     }
 };
