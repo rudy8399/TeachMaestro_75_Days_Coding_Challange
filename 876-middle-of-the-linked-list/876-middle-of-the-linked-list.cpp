@@ -11,6 +11,15 @@
 class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
+        ListNode* slow=head;
+        ListNode* fast=head;
+        while(fast->next && fast->next->next){
+            slow=slow->next;
+            fast=fast->next->next;
+        }
+        if(fast->next==NULL)return slow;
+        else return slow->next;
+    }
     // int cnt=0;
     //     ListNode* temp=head;
     //     while(temp){
@@ -24,35 +33,25 @@ public:
     //         i++;    
     //     }
     //     return temp;
-    //}
-        if(head->next==NULL){
-            return head;
-        }
-    ListNode* fast=head;
-     ListNode* slow=head;
+//     //}
+//         if(head->next==NULL){
+//             return head;
+//         }
+//     ListNode* fast=head;
+//      ListNode* slow=head;
         
-        while(fast){
-            if(fast->next==NULL || fast->next->next==NULL){
-                break;
-            }
-            fast=fast->next->next;
-            slow=slow->next;  
-        }
-        if(fast->next==NULL){
-            return slow;
-        }
-        return slow->next;
+//         while(fast){
+//             if(fast->next==NULL || fast->next->next==NULL){
+//                 break;
+//             }
+//             fast=fast->next->next;
+//             slow=slow->next;  
+//         }
+//         if(fast->next==NULL){
+//             return slow;
+//         }
+//         return slow->next;
                
-    }
-        //     ListNode* slow=head;
-    //     ListNode* fast=head;
-    //     while(fast->next!=NULL and fast->next->next!=NULL){
-    //         fast=fast->next->next;
-    //         slow=slow->next;
-    //     }
-    //     if(fast->next!=NULL){
-    //         return slow->next;
-    //     }
-    //     return slow;    
-    // }
+//     }
+      
 };
