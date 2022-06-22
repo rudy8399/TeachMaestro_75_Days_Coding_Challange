@@ -11,6 +11,32 @@
 class Solution {
 public:
     ListNode* removeElements(ListNode* head, int val) {
+   if(head==NULL || head->next==NULL && head->val==val)return NULL;       
+        ListNode* cur=head->next;
+        ListNode* prev=head;
+        while(cur){
+            if(cur->val==val){
+                ListNode* temp=cur->next;
+                cur->next=NULL;
+                delete cur;
+                prev->next=temp;
+                cur=temp;
+            }
+            else{
+                prev=cur;
+                cur=cur->next;
+            }
+        }
+        if(head->val==val){
+            ListNode* temp=head;
+            head=head->next;
+            temp->next=NULL;
+            delete temp;
+            
+        }
+        return head;
+    }
+        
         
         //not my code copied from somewhere
 //         ListNode *pseudo_head = new ListNode(0);
@@ -24,30 +50,30 @@ public:
 //         }
 //         return pseudo_head->next;
 //     }
-        if(head==NULL || head->next==NULL && head->val==val){
-            return NULL;
-        }
-        ListNode* temp=head;
-        while(temp){
-            if(temp->next==NULL){
-                break;
-            }
-            if(temp->next->val==val){
-                ListNode* node=temp->next;
-                ListNode* node2=node->next;
-                delete node;
-                temp->next=node2;
-            }
-            else{
-                temp=temp->next;
-            }
+//         if(head==NULL || head->next==NULL && head->val==val){
+//             return NULL;
+//         }
+//         ListNode* temp=head;
+//         while(temp){
+//             if(temp->next==NULL){
+//                 break;
+//             }
+//             if(temp->next->val==val){
+//                 ListNode* node=temp->next;
+//                 ListNode* node2=node->next;
+//                 delete node;
+//                 temp->next=node2;
+//             }
+//             else{
+//                 temp=temp->next;
+//             }
             
-        }
-        if(head->val==val){
-            head=head->next;
-        }
-        return head;
+//         }
+//         if(head->val==val){
+//             head=head->next;
+//         }
+//         return head;
         
-    }
+//     }
        
 };
