@@ -11,6 +11,14 @@
 class Solution {
 public:
     int getDecimalValue(ListNode* head) {
+        int res=0;
+        ListNode* temp=head;
+        while(temp){
+            res=2*res+temp->val;
+            temp=temp->next;
+        }
+        return res;
+    }
 //         stack<int>s;
 //         while(head!=NULL){
 //             s.push(head->val);
@@ -26,22 +34,25 @@ public:
 //         return sum;
         
 //     }
-        ListNode* temp=head;
-        int cnt=0;
-        int pow2=1;
-        while(temp){
-            temp=temp->next;
-            cnt++;
-            pow2*=2;
-        }
-        int sum=0;
-        pow2=pow2/2;
-        temp=head;
-        while(temp){
-            sum+=pow2*temp->val;
-            pow2=pow2/2;
-            temp=temp->next;
-        }
-        return sum;
-    }
+    
+    
+    
+    //     ListNode* temp=head;
+    //     int cnt=0;
+    //     int pow2=1;
+    //     while(temp){
+    //         temp=temp->next;
+    //         cnt++;
+    //         pow2*=2;
+    //     }
+    //     int sum=0;
+    //     pow2=pow2/2;
+    //     temp=head;
+    //     while(temp){
+    //         sum+=pow2*temp->val;
+    //         pow2=pow2/2;
+    //         temp=temp->next;
+    //     }
+    //     return sum;
+    // }
 };
