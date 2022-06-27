@@ -9,17 +9,40 @@
  * };
  */
 class Solution {
-public:
-    ListNode* temp;
-    bool isPalindrome(ListNode* head) {
-        temp = head;
-        return check(head);
+private:
+    ListNode* findMiddle(ListNode* head){
+        ListNode *slow=head,*fast=head;
+        //slow=head;fast=head;
+        while(fast->next && fast->next->next){
+            fast=fast->next->next;
+            slow=slow->next;
+        }
+        return slow;
     }
-    
-    bool check(ListNode* p) {
-        if (NULL == p) return true;
-        bool isPal = check(p->next) & (temp->val == p->val);
-        temp = temp->next;
-        return isPal;
+    ListNode* reverse(ListNode* head){
+        ListNode* prev=head;
+        ListNode* cur=head->next;
+        while(cur){
+            ListNode* nxt=cur->next;
+            cur->next=prev;
+            prev=cur;
+            cur=nxt;
+        }
+        return prev;
+    }
+    bool check(ListNode* head,ListNode* secondHead){
+        while(head && secondHead){
+            if(head->val!=secondHead->val)return false;
+            head=head->next;
+            secondHead=secondHead->next;
+        }
+        return true;
+    }
+public:
+    bool isPalindrome(ListNode* head) {
+        ListNode* mid=findMiddle(head);
+        ListNode* secondHead=reverse(mid);
+        mid->next=NULL;
+        return check(head,secondHead);
     }
 };
